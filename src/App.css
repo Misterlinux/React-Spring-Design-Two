@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+  --primary: #105C49;
+  --secondary: #1DA483;
+  --success: #f2ad5f;
+  --danger: #ec8717;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h4{
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bebas{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.hammer{
+  font-family: 'Hammersmith One', sans-serif;;
+}
+
+/* --navbar-- */
+.navbar-toggler-icon{
+  background-image: url("./images/toggler.svg");
+}
+
+.navbar-toggler{
+  border: 2px solid var(--success) ;
+}
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+/* --primo-- */
+
+.totalwindow{
+  height: 42vh;
+  width: 100vw; 
+}
+
+.present{
+  z-index: 2;
+  height: 40vh;
+  left: 2%;
+}
+
+.back{
+  height: 35vh;
+  right: 1%;
+}
+
+.ground{
+  background-image: url("https://i.pinimg.com/originals/e6/35/92/e63592d336bde183bf464e18f4980f1f.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .totalwindow{
+    height: 60vh;
+    width: 100vw; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .present{
+    z-index: 2;
+    height: 40vh;
+    left: 5%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .back{
+    height: 50vh;
+    right: 5%;
   }
+
 }
+

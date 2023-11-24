@@ -1,23 +1,74 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Task, { useStato, useStatodis } from "./components/Context"
+import Dropdown from 'react-bootstrap/Dropdown';
+
+import Home from "./components/Home";
+import Primo from './components/Primo';
+import Secondo from "./components/Secondo";
+import 'bootstrap/dist/css/bootstrap.css';
+import "./Global.scss"
 import './App.css';
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavbarBrand } from "react-bootstrap";
+
+
 function App() {
+
+
+  function Navbarra(){
+
+    return(
+      <div className="d-flex bg-primary justify-content-center">
+      <div className="row mx-0 col-12 col-md-11">
+
+      <Navbar className="text-success" bg="primary" expand="md">
+        <Container fluid className="d-flex justify-content-between">
+          
+          <Navbar.Brand className="text-success hammer fs-1" href="#home">AccaDem</Navbar.Brand>
+
+          <Navbar.Toggle className="text-primary" aria-controls="" />
+          <Navbar.Collapse id="navbar-dark-example">
+            <Nav className="row mx-0">
+              <h4 className="col-3 py-md-0 py-1">lorem</h4>
+              <h4 className="col-3 py-md-0 py-1">lorem</h4>
+              <h4 className="col-3 py-md-0 py-1">lorem</h4>
+              <h4 className="col-3 py-md-0 py-1">lorem</h4>
+            </Nav>
+          </Navbar.Collapse>
+
+        </Container>
+      </Navbar>
+
+      </div>
+      </div>
+    )
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Task>
+      <Router>
+
+        <Navbarra />
+        <Routes>
+          <Route path="*" element={<Home/>} />
+          <Route path="second/*" element={<Secondo />} />
+        </Routes>
+
+      </Router>
+      </Task>
+
     </div>
   );
 }
