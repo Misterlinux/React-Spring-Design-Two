@@ -51,7 +51,7 @@ function Terzo(){
 
 
   return(
-    <div>
+    <div className="bg-primary">
 
       <div className="d-flex justify-content-center">
         <div className="row col-12 col-md-10 bg-primary">
@@ -63,7 +63,7 @@ function Terzo(){
               <div onClick={()=> check(0)} className={`col-4 p-3 text-center leftcut ${course[0] ? "bg-success" : "bg-danger" }`}>
                 <h5>All</h5>
               </div>
-              <div onClick={()=> check(1)} className={`col-3 p-3 ${course[1] ? "bg-success" : "bg-danger" }`}>
+              <div onClick={()=> check(1)} className={`col-3 p-3 text-center ${course[1] ? "bg-success" : "bg-danger" }`}>
                 <h5>Stem</h5>
               </div>
               <div onClick={()=> check(2)} className={`col-4 p-3 rightcut ${course[2] ? "bg-success" : "bg-danger" }`}>
@@ -72,16 +72,16 @@ function Terzo(){
             </div>
           </div>
 
-          <div className="bg-success row col-12 mx-0 px-0" >
+          <div className="bg-success border-bottom border-1 border-primary row col-12 mx-0 px-0" >
             <div className="d-flex align-items-center justify-content-around justify-content-md-center row mx-0 px-0 container-fluid">
 
-              {metti( ({alto, ...stile}, item, ter, index)=> (
+              {metti( (stile, item, ter, index)=> (
                 item &&
                 <animated.div className="col-6 col-md-4 row d-flex justify-content-center align-content-center my-4" style={stile} key={index}>
                   <div className="col-12 col-md-10 d-flex justify-content-center align-items-center position-relative border border-primary border-2 quadro"> 
                     
                     <div className="sfondo" style={{ backgroundImage: `url(${item.img})` }}></div>
-                    <div className="text-start position-absolute text-primary p-2"> 
+                    <div className="text-start position-absolute text-primary p-2 "> 
                       <h4>{item.name}</h4>
                       <p>{item.desc}</p>
                     </div>

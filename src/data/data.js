@@ -34,55 +34,49 @@ export function perki(){
 let courses = [
   {
     name: "Introduction to Math",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
-    img: "https://i.pinimg.com/236x/83/68/56/836856c54b253b3ae707bb1911118c72.jpg",
-    type: "basic"
-  },
-  {
-    name: "Introduction to Physics",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/83/68/56/836856c54b253b3ae707bb1911118c72.jpg",
     type: "basic"
   },
   {
     name: "First level Stem",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
     type: "stem"
   },
   {
     name: "Basic Tect",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
     type: "tect"
   },
   {
     name: "Middle level Tect",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
     type: "tect"
   },
   {
     name: "Intermidiate Stem",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
     type: "stem"
   },
   {
     name: "Advanced Stem",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
     type: "stem"
   },
   {
     name: "Supplementary Tect level",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
     type: "tect"
   },
   {
     name: "Advanced Tect",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, atque.",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
     type: "tect"
   },
