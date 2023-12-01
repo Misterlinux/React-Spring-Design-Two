@@ -16,7 +16,7 @@ h1,h4{
 }
 
 .bebas{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .hammer{
@@ -40,7 +40,7 @@ h1,h4{
 
 .totalwindow{
   height: 42vh;
-  width: 100vw; 
+  /*width: 100vw; */
 }
 
 .present{
@@ -63,11 +63,96 @@ h1,h4{
   opacity: 0.8;
 }
 
+/* secondo */
+
+/* https://i.pinimg.com/236x/82/f5/56/82f5566e6e5fc3cd9dbab85482699960.jpg */
+/* https://i.pinimg.com/236x/83/42/37/83423769fba69414d5192f8c9bff31a2.jpg */
+
+/* https://i.pinimg.com/236x/a2/86/31/a286318fca6134cf467fff6838770996.jpg */
+/* https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg */
+
+.secondwind{
+  height: 42vh;
+}
+
+.secondimg{
+  left: 0%;
+  height: 65%;
+  z-index: 2;
+}
+
+.secondtext{
+  right: 4%;
+  height: 80%;
+}
+
+.perksimg{
+  background-image: url("https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg");
+  background-size: cover;
+  background-position: center center;
+  
+  height: 100%;
+
+}
+
+.circle{
+  position: absolute;
+
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: var(--success);
+}
+
+/* --terzo-- */
+
+.leftcut{
+  clip-path: polygon(0% 100%, 20% 0%, 100% 0%, 100% 100%);
+}
+
+.leftcut > h5{
+  position: relative;
+  right: -10px;
+}
+
+.rightcut{
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+  text-align: center;
+}
+
+.rightcut > h5{
+  position: relative;
+  left: -10px;
+}
+
+/* --Terzo-- */
+
+.quadro{
+  height: 20vh;
+}
+
+.sfondo{
+  background-size: cover;
+  background-position: center center;
+  background-color: #105C49;
+
+  opacity: 0.25;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 400px){
+  .quadro{
+    height: 30vh;
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   .totalwindow{
     height: 60vh;
-    width: 100vw; 
+    /*width: 100vw;*/ 
   }
   
   .present{
@@ -81,5 +166,27 @@ h1,h4{
     right: 5%;
   }
 
+  /* --secondo-- */
+  .secondwind{
+    height: 60vh;
+  }
+
+  .secondimg{
+    left: 5%;
+    height: 65%;
+    z-index: 2;
+  }
+
+  .secondtext{
+    right: 5%;
+    height: 80%;
+  }
+
+  /*--terzo-- */
+
+  .quadro{
+    height: 30vh;
+  }
+  
 }
 

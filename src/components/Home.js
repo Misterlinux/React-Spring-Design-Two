@@ -2,6 +2,8 @@ import React from "react";
 
 import Primo from "./Primo";
 import Secondo from "./Secondo";
+import Terzo from "./Terzo";
+import Quarto from "./Quarto";
 
 function Home(){
 
@@ -18,6 +20,8 @@ function Home(){
 
       <Primo />
       <Secondo />
+      <Terzo />
+      <Quarto />
 
     </div>
   )
