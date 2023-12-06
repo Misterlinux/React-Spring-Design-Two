@@ -4,6 +4,8 @@ import Primo from "./Primo";
 import Secondo from "./Secondo";
 import Terzo from "./Terzo";
 import Quarto from "./Quarto";
+import Quinto from "./Quinto";
+import Footer from "./Footer";
 
 function Home(){
 
@@ -22,6 +24,8 @@ function Home(){
       <Secondo />
       <Terzo />
       <Quarto />
+      <Quinto />
+      <Footer />
 
     </div>
   )

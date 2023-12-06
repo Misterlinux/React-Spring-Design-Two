@@ -86,3 +86,21 @@ export function corsi(){
   return courses;
 }
 
+let gallery = [
+  {
+    img: "https://i.pinimg.com/736x/2d/df/bb/2ddfbb94c62d51d3b0010b54adfd6b73.jpg",
+    name: "Check our Winter Season Image gallery",
+  },
+  {
+    img: "https://i.pinimg.com/236x/8d/37/d8/8d37d898d90333df93a5caf9fa4688c6.jpg",
+    name: "Check our Middle Season Image gallery",
+  },
+  {
+    img: "https://i.pinimg.com/236x/07/b5/b9/07b5b9f83d4dd557a93b31d1250c65f8.jpg",
+    name: "Check our Open Season Image gallery",
+  },
+]
+
+export function gallerie(){
+  return gallery;
+}

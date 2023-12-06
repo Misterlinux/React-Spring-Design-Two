@@ -82,7 +82,7 @@ function Terzo(){
                     
                     <div className="sfondo" style={{ backgroundImage: `url(${item.img})` }}></div>
                     <div className="text-start position-absolute text-primary p-2 "> 
-                      <h4>{item.name}</h4>
+                      <h4 className="hammer">{item.name}</h4>
                       <p>{item.desc}</p>
                     </div>
 

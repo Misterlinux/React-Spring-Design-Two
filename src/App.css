@@ -8,7 +8,7 @@
   --primary: #105C49;
   --secondary: #1DA483;
   --success: #f2ad5f;
-  --danger: #ec8717;
+  --danger: #c8717e;
 }
 
 h1,h4{
@@ -134,13 +134,51 @@ h1,h4{
 .sfondo{
   background-size: cover;
   background-position: center center;
-  background-color: #105C49;
 
   opacity: 0.25;
   height: 100%;
   width: 100%;
   position: absolute;
 }
+
+/* --Quarto-- */
+
+.photo{
+  background-size: cover;
+  background-position: center center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.d-md-none .carousel-indicators{
+  margin-bottom: 0;
+}
+
+.topdown{
+  top: 0;
+}
+
+.backo{
+  background-image: url("https://i.pinimg.com/236x/04/28/6f/04286fb1e436ba6f06eb677fc8b89aa6.jpg");
+  background-size: contain;
+  background-position: center center;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.carousel-control-prev-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+}
+ 
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
 
 @media only screen and (max-width: 400px){
   .quadro{
