@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import dayjs from 'dayjs';
 
 //npm install dayjs
@@ -12,6 +12,13 @@ function Footer(){
 
   let ora = 36 * Math.pow(10, 2) 
   let timer = (6 * ora) + (Math.random() * 5 * ora)
+
+  let [cose, setCose] = useState("stato")
+
+  useEffect(()=>{
+    //console.log("Only once")
+    console.log( cose )
+  })
 
   function timed(){
 
