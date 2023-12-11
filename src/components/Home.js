@@ -7,6 +7,7 @@ import Quarto from "./Quarto";
 import Quinto from "./Quinto";
 import Footer from "./Footer";
 
+
 function Home(){
 
   //remember the scrolUp button that appears at a certainpoint....

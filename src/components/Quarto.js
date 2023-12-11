@@ -20,7 +20,7 @@ function Quarto(){
 
   let lower = useSpring({
     opacity: 1,
-    top: seeDesc ? "57vh" : "0vh",
+    bottom: seeDesc ? "0vh" : "50vh",
     config: {duration: 1200}
   })
 

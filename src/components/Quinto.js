@@ -1,68 +1,156 @@
-import {useState} from "react";
-
+import {useEffect, useState, useRef, useMemo} from "react";
+import { useSpring, useTransition, animated, config} from "@react-spring/web";
 
 function Quinto(){
 
-  let [ora, setOra] = useState([])
+  let hour = 3600
+  let timer = useMemo(()=>{
+    return (6 * hour) + (Math.random() * 5 * hour)
+  },[])
 
+  let [dehou, setDehou ] = useState(["2"])
+  let [hou, setHou] = useState(["3"])
 
-  let testo = []
+  let [desec, setDesec ] = useState(["5"])
+  let [sec, setSec] = useState(["9"])
 
-  function updateTime (){
-    testo = []
-    var now = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Rome"})); 
+  let [demin, setDemin ] = useState(["5"])
+  let [min, setMin] = useState(["9"])
 
-    var nowHours = now.getHours().toString()
-    var nowMinutes = now.getMinutes().toString()
-    var nowSeconds = now.getSeconds().toString()
-
-    updateContainer(nowHours)
-    updateContainer(nowMinutes)
-    updateContainer(nowSeconds)
+  let circle = {
+    from: { y: -20 },
+    enter: { y: 0, config: config.gentle },
+    leave: { y: 30 },
+    exitBeforeEnter: true,
+    config: {duration: 333 },
   }
 
-  function updateContainer (newTime) {
-    var time = newTime.split('')
+  let secondi = useTransition(sec, circle)
+  let desecondi = useTransition(desec, circle)
 
-    if (time.length === 1) {
-      time.unshift('0')
+  let minuti = useTransition(min, circle)
+  let deminuti = useTransition(demin, circle)
+
+  let ora = useTransition(hou, circle)
+  let deora = useTransition(dehou, circle)
+
+  let timeo = useRef(timer)
+  let timeo1 = timeo.current;
+
+  function porta(){
+    timeo1 -= 1
+
+    let seconds = Math.floor(timeo1 % 60);
+    let minutes = Math.floor((timeo1 / 60) % 60);
+    let hours = Math.floor(timeo1 / (60 * 60) % 24)
+
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    let primo = hours.toString().split("") 
+    let secondo = minutes.toString().split("")
+    let terzo = seconds.toString().split("")
+
+    setSec( terzo[1] )    
+    setDesec( terzo[0] )
+    setMin( secondo[1] )
+    setDemin( secondo[0] )
+    setHou( primo[1] )
+    setDehou( primo[0] )
+  }
+
+  let inter;
+
+  useEffect(()=>{
+
+    if( timeo1 ){
+      inter = setInterval(()=>{
+
+        if(timeo1==0){
+          alert("Thanks for wating, the special sale is off")
+          clearInterval(inter)
+        }
+
+        porta()
+      }, 1000)
     }
-  
-    console.log( time )
-    testo.push( time )
 
-    console.log( testo.flat() )
-    console.log( "-------" )
-  }
+    return () =>{
+      clearInterval(inter)
+    }
 
-  //setInterval(updateTime, 5000)
+  }, [timeo1])
 
+  //OK so, to avoid the elements stuttering between each other
+  //exitbefore: true is not enought we need display none
+  //on the leave 
 
   return(
-    <div className="position-relative bg-danger d-flex flex-column justify-content-center align-items-center p-3" style={{ height: "50vh" }}>
+    <div className="position-relative bg-danger dealwindow flex-column p-3">
 
       <div className="position-absolute backo">
       </div>
 
+      <div className="position-relative row mx-0 col-10 col-md-8 justify-content-center bg-primary p-3">
 
-      <div className="position-relative row mx-0 col-10 justify-content-center bg-primary p-3">
+        <div className="text-center text-success">
+          <h2>Enroll Now</h2>
+          <p>Limited time offer avaiable</p>
+        </div>
 
-      <div className="text-center text-success">
-        <h2>Enroll Now</h2>
-        <p>Limited time offer avaiable</p>
-      </div>
+        <div className="row mx-0 col-9 digitwindow p-2">
+          <h1 className="col-4 row mx-0 p-0 ">
 
-      <div className="row mx-0 col-9 justify-content-center bg-success p-4">
-        <div className="col-4">12 :</div>
-        <div className="col-4">12 :</div>
-        <div className="col-4">12</div>
-      </div>
+            {deora((stile, cont) => (
+              <animated.div className="col-5 digit" style={stile}> 
+                {cont} 
+              </animated.div>
+            )) }
 
-      <div className="text-center mt-3">
-        <button className="btn btn-success text-primary">
-          Sign in
-        </button>
-      </div>
+            {ora((stile, cont) => (
+              <animated.div className="col-5 digit" style={stile}> 
+                {cont} 
+              </animated.div>
+            )) }
+            
+            <div className="p-0 col-2 d-flex align-items-center justify-content-center">:</div>
+          </h1>
+          <h1 className="col-4 row mx-0 p-0">
+            {deminuti((stile, cont) => (
+              <animated.div className="col-5 digit" style={stile}> 
+                {cont} 
+              </animated.div>
+            )) }
+
+            {minuti((stile, cont) => (
+              <animated.div className="col-5 digit" style={stile}> 
+                {cont} 
+              </animated.div>
+            )) }
+
+            <div className="p-0 col-2 d-flex align-items-center justify-content-center">:</div>
+          </h1>
+          <h1 className="col-4 row mx-0 p-0">
+            {desecondi((stile, cont) => (
+              <animated.div className="col-5 digit" style={stile}> 
+                {cont} 
+              </animated.div>
+            )) }    
+
+            {secondi((stile, cont) => (
+              <animated.div className="col-5 digit" style={stile}> 
+                {cont} 
+              </animated.div>
+            )) }
+          </h1>
+        </div>
+
+        <div className="text-center mt-3">
+          <button className="btn btn-success text-primary">
+            <b>Sign in </b>
+          </button>
+        </div>
 
       </div>
 

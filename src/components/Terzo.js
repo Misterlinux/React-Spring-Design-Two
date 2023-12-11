@@ -6,6 +6,7 @@ import { filter } from "lodash";
 
 function Terzo(){
 
+  
   let stato = useStato()
   let [course, setCourse] = useState([true, false, false])
 
