@@ -20,7 +20,7 @@ function Quinto(){
   let circle = {
     from: { y: -20 },
     enter: { y: 0, config: config.gentle },
-    leave: { y: 30 },
+    leave: { y: 50 },
     exitBeforeEnter: true,
     config: {duration: 333 },
   }

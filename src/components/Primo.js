@@ -1,7 +1,10 @@
 import react from "react";
 import Task, { useStato, useStatodis } from "./Context"
 import { animated, useSprings, useInView, useSpring, config } from '@react-spring/web'
-
+import {
+  BrowserRouter as Router,
+  Link,
+} from "react-router-dom";
 
 function Primo(){
 
@@ -25,9 +28,11 @@ function Primo(){
             <h1 className="hammer">Welcome to the AccaDem</h1>
             <p> Where you can develp you stuff </p>
 
+            <Link to="prof">
             <animated.button className="btn btn-danger text-white hammer fs-6" style={{ x: ximg }}>
               Learn more
             </animated.button>
+            </Link>
 
           </div>
           <animated.div className="col-7 position-absolute back" style={{ x: xbtn }}>          

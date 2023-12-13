@@ -10,6 +10,11 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Home from "./components/Home";
 import Primo from './components/Primo';
 import Secondo from "./components/Secondo";
+import Prof from "./components/Prof";
+import Perks from "./components/Perks";
+import Stem from "./components/Stem";
+import Tech from "./components/Tech";
+
 import 'bootstrap/dist/css/bootstrap.css';
 import "./Global.scss"
 import './App.css';
@@ -33,7 +38,11 @@ function App() {
       <Navbar className="text-success" bg="primary" expand="md">
         <Container fluid className="d-flex justify-content-between">
           
-          <Navbar.Brand className="text-success hammer fs-1" href="#home">AccaDem</Navbar.Brand>
+          <Link to="">
+            <Navbar.Brand className="text-success hammer fs-1">
+                AccaDem
+            </Navbar.Brand>
+          </Link>
 
           <Navbar.Toggle className="text-primary" aria-controls="" />
           <Navbar.Collapse id="navbar-dark-example">
@@ -63,7 +72,9 @@ function App() {
         <Navbarra />
         <Routes>
           <Route path="*" element={<Home/>} />
-          <Route path="second/*" element={<Secondo />} />
+          <Route path="prof/*" element={<Prof/>} />
+          <Route path="perks/*" element={<Perks />} />
+
         </Routes>
 
       </Router>

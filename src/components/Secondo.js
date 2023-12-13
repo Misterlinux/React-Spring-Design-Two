@@ -2,6 +2,11 @@ import React from "react";
 import Task, { useStato, useStatodis } from './Context';
 import { animated, useSprings, useInView, useSpring, config } from '@react-spring/web'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {
+  BrowserRouter as Router,
+  Link,
+} from "react-router-dom";
+
 
 function Secondo(){
 
@@ -37,9 +42,13 @@ function Secondo(){
                 dolor labore ullam aut ea ducimus!
               </p>
               <div>
+
+              <Link to="perks">
                 <button className="btn btn-secondary text-white">
                   Check perks
-                </button>
+                </button>              
+              </Link>
+
               </div>
             </div>
           </div>

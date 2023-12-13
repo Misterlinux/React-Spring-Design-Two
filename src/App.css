@@ -92,7 +92,6 @@ h1,h4{
   background-position: center center;
   
   height: 100%;
-
 }
 
 .circle{
@@ -160,8 +159,8 @@ h1,h4{
 }
 
 .backo{
-  background-image: url("https://i.pinimg.com/236x/04/28/6f/04286fb1e436ba6f06eb677fc8b89aa6.jpg");
-  background-size: contain;
+  background-image: url("https://i.pinimg.com/originals/ca/a2/8c/caa28c3b19efb35212a54724b83aa600.png");
+  background-size: cover;
   background-position: center center;
   opacity: 0.6;
   width: 100%;
@@ -195,6 +194,40 @@ h1,h4{
  
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Prof */
+
+.professor{
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+}
+
+.exagon{
+  height: 7vh;
+  width: 7vh;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 2;
+  top: 16vh;
+}
+
+.linea{
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  bottom: 3%;
+}
+
+/* Perks */
+
+.dietro{
+  background-image: url("https://i.pinimg.com/236x/01/e5/a0/01e5a078f041cb1f822187f179ccd1b9.jpg");
+  background-size: cover;
+  background-position: center 20%;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -245,7 +278,6 @@ h1,h4{
   }
   
   /* --quinto-- */
-
   .dealwindow{
     height: 70vh;
   }
@@ -256,6 +288,16 @@ h1,h4{
 
   .digit{
     font-size: 1.8em;
+  }
+
+  /* --prof-- */
+
+  .professor{
+    height: 30vh;
+  }
+
+  .exagon{
+    top: 24vh;
   }
 
 }

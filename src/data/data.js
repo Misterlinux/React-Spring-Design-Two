@@ -1,5 +1,69 @@
 import { faBaseballBatBall, faTree, faBusSimple} from "@fortawesome/free-solid-svg-icons";
 
+export let profs = [
+  {
+    id: 1,
+    name: "Louis Illinois",
+    field: "Droid assistant",
+    img: "https://i.pinimg.com/236x/4d/2c/09/4d2c094692f734dec8cc09fdc3c2b9dd.jpg",
+    present: `
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Possimus quibusdam distinctio ea animi obcaecati enim dicta
+      delectus ex fugit illo!
+    `
+  },
+  {
+    id: 1,
+    name: "Marcus twane",
+    field: "Chemestry inspector",
+    img: "https://i.pinimg.com/236x/7a/18/83/7a188377bb6322beb5e0cae6101b6d96.jpg",
+    present: `
+      Kerala’s old trading port seems like an inspired setting: 
+      for more than six centuries, Kochi has been a crucible of 
+      cosmopolitanism, one of the few cities in India where pre-colonial 
+      traditions of cultural pluralism continue to flourish, 
+    `
+  },
+  {
+    id: 2,
+    name: "Sam alexis",
+    field: "Design supervisor",
+    img: "https://i.pinimg.com/236x/61/6a/08/616a080cc96d3d06cdb29abd68dc39e0.jpg",
+    present: `
+      study groups from schools, colleges, and organizations, 
+      political leaders, dignitaries, celebrities, artists, curators, 
+      and museum officials. Surely, I thought, the biennale will 
+      find a way to make us all feel welcome.
+    `
+  },
+  {
+    id: 2,
+    name: "Tuck Jhonson",
+    field: "Droid assistant",
+    img: "https://i.pinimg.com/236x/7a/18/83/7a188377bb6322beb5e0cae6101b6d96.jpg",
+    present: `
+      But if you are impressionable—if you are, like me, a first-time biennale 
+      visitor—it’s hard to dismiss the jargon as ridiculous: it’s a barrier, 
+    `
+  }, 
+  {
+    id: 3,
+    name: "Tamara Ohan",
+    field: "Professional tester",
+    img: "https://i.pinimg.com/236x/4d/2c/09/4d2c094692f734dec8cc09fdc3c2b9dd.jpg",
+    present: `
+      The jargon of Shubigi Rao’s statement could be found, unfortunately, 
+      throughout the exhibition. Alongside the essential details of an 
+      artwork (artist, title, date, materials, dimensions, owner) provided 
+      in standard wall text labels, many art works were accompanied by statements 
+    `
+  }
+]
+
+export function profes(){
+  return profs
+}
+
 let perks = [
   {
     perk: "Sport activities",

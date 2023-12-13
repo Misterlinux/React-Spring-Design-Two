@@ -7,6 +7,7 @@ import Quarto from "./Quarto";
 import Quinto from "./Quinto";
 import Footer from "./Footer";
 
+import Extra from "./Extra";
 
 function Home(){
 
@@ -27,6 +28,8 @@ function Home(){
       <Quarto />
       <Quinto />
       <Footer />
+
+      <Extra />
 
     </div>
   )
