@@ -1,5 +1,9 @@
 import {useEffect, useState, useRef, useMemo} from "react";
 import { useSpring, useTransition, animated, config} from "@react-spring/web";
+import {
+  BrowserRouter as Router,
+  Link,
+} from "react-router-dom";
 
 function Quinto(){
 
@@ -147,9 +151,11 @@ function Quinto(){
         </div>
 
         <div className="text-center mt-3">
+          <Link to="sign">
           <button className="btn btn-success text-primary">
             <b>Sign in </b>
           </button>
+          </Link>
         </div>
 
       </div>

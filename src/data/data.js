@@ -1,4 +1,8 @@
-import { faBaseballBatBall, faTree, faBusSimple} from "@fortawesome/free-solid-svg-icons";
+import { faBaseballBatBall, faTree, faBusSimple, faChalkboardUser, faSchool, faUserNinja} from "@fortawesome/free-solid-svg-icons";
+
+//<FontAwesomeIcon icon={faChalkboardUser} />
+//<FontAwesomeIcon icon={faSchool} />
+//<FontAwesomeIcon icon={faUserNinja} />
 
 export let profs = [
   {
@@ -6,6 +10,7 @@ export let profs = [
     name: "Louis Illinois",
     field: "Droid assistant",
     img: "https://i.pinimg.com/236x/4d/2c/09/4d2c094692f734dec8cc09fdc3c2b9dd.jpg",
+    icon: faUserNinja,
     present: `
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Possimus quibusdam distinctio ea animi obcaecati enim dicta
@@ -17,6 +22,7 @@ export let profs = [
     name: "Marcus twane",
     field: "Chemestry inspector",
     img: "https://i.pinimg.com/236x/7a/18/83/7a188377bb6322beb5e0cae6101b6d96.jpg",
+    icon: faChalkboardUser,
     present: `
       Kerala’s old trading port seems like an inspired setting: 
       for more than six centuries, Kochi has been a crucible of 
@@ -29,6 +35,7 @@ export let profs = [
     name: "Sam alexis",
     field: "Design supervisor",
     img: "https://i.pinimg.com/236x/61/6a/08/616a080cc96d3d06cdb29abd68dc39e0.jpg",
+    icon: faChalkboardUser,
     present: `
       study groups from schools, colleges, and organizations, 
       political leaders, dignitaries, celebrities, artists, curators, 
@@ -41,6 +48,7 @@ export let profs = [
     name: "Tuck Jhonson",
     field: "Droid assistant",
     img: "https://i.pinimg.com/236x/7a/18/83/7a188377bb6322beb5e0cae6101b6d96.jpg",
+    icon: faUserNinja,
     present: `
       But if you are impressionable—if you are, like me, a first-time biennale 
       visitor—it’s hard to dismiss the jargon as ridiculous: it’s a barrier, 
@@ -48,9 +56,10 @@ export let profs = [
   }, 
   {
     id: 3,
-    name: "Tamara Ohan",
+    name: "Tamara Rohan",
     field: "Professional tester",
     img: "https://i.pinimg.com/236x/4d/2c/09/4d2c094692f734dec8cc09fdc3c2b9dd.jpg",
+    icon: faSchool,
     present: `
       The jargon of Shubigi Rao’s statement could be found, unfortunately, 
       throughout the exhibition. Alongside the essential details of an 

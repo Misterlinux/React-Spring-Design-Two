@@ -50,14 +50,25 @@ function Prof(){
     return stile
   }
 
-
-
   return(
-    <div className="row mx-0 d-flex justify-content-center">
+    <div>
 
-      <div className="py-5">
-        <h1 className="text-center">List of Teachers at the AccaDem</h1>
+      <div className="row mx-0">
+
+      <div className="col-1 d-none d-md-flex bg-success"></div>
+
+      <div className="col-12 col-md-10 px-0 d-flex justify-content-center align-items-center bg-success" style={{ height: "15vh" }}>
+        <div className="preprof"></div>
+        <h1 className="position-absolute hammer text-primary p-1 bg-success" style={{ zIndex: 2 }} >
+          The professors at AccaDem
+        </h1>
       </div>
+
+      <div className="col-1 d-none d-md-flex bg-success"></div>
+
+      </div>
+
+      <div className="bg-primary row mx-0 d-flex justify-content-center py-3">
 
       { stato.profs.map((cont, index)=> {
 
@@ -82,7 +93,7 @@ function Prof(){
             >
               <FontAwesomeIcon
                 className="text-success"
-                icon={faBaseballBatBall}
+                icon={ cont.icon }
               />
             </animated.div>
 
@@ -106,6 +117,7 @@ function Prof(){
             </div>
           </div>
         );} ) }
+      </div>
 
       <div style={{ height: "50vh" }}></div>
 

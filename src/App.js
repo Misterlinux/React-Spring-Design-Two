@@ -14,6 +14,7 @@ import Prof from "./components/Prof";
 import Perks from "./components/Perks";
 import Stem from "./components/Stem";
 import Tech from "./components/Tech";
+import Sign from "./components/Sign";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import "./Global.scss"
@@ -74,7 +75,7 @@ function App() {
           <Route path="*" element={<Home/>} />
           <Route path="prof/*" element={<Prof/>} />
           <Route path="perks/*" element={<Perks />} />
-
+          <Route path="sign/*" element={<Sign />} />
         </Routes>
 
       </Router>
