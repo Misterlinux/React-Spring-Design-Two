@@ -240,6 +240,40 @@ h1,h2,h3,h4{
   width: 100%;
 }
 
+/* STEM/Tech */
+
+.courseimg{
+  position: absolute;
+  background-image: url("https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg");
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.7;
+
+  width: 52%;
+  height: 100%;
+}
+
+.taglio{
+  position: absolute;
+  right: 0;
+
+  clip-path: polygon(0% 100%, 25% 0%, 100% 0%, 75% 100%);
+
+  width: 70%;
+  height: 100%;
+}
+
+.circo{
+  border-radius: 50%;
+}
+
+.retta{
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}
+
+
 /* Signin */
 
 .basic{

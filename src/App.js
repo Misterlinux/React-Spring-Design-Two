@@ -12,6 +12,7 @@ import Primo from './components/Primo';
 import Secondo from "./components/Secondo";
 import Prof from "./components/Prof";
 import Perks from "./components/Perks";
+import Courses from "./components/Courses";
 import Stem from "./components/Stem";
 import Tech from "./components/Tech";
 import Sign from "./components/Sign";
@@ -63,7 +64,6 @@ function App() {
     )
   }
 
-
   return (
     <div>
 
@@ -72,10 +72,12 @@ function App() {
 
         <Navbarra />
         <Routes>
-          <Route path="*" element={<Home/>} />
+          <Route path="/*" element={<Home/>} />
           <Route path="prof/*" element={<Prof/>} />
-          <Route path="perks/*" element={<Perks />} />
-          <Route path="sign/*" element={<Sign />} />
+          <Route path="perks/*" element={<Perks/>} />
+          <Route path="stem/*" element={<Courses/>} />
+          <Route path="tech/*" element={<Courses/>} />
+          <Route path="sign/*" element={<Sign/>} />
         </Routes>
 
       </Router>

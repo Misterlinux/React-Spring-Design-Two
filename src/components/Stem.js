@@ -4,7 +4,17 @@ function Stem(){
 
   return(
     <div>
-      <h1>This is the perks</h1>
+
+      <div className="d-flex b-primary position-relative" style={{ height: "25vh" }}>
+
+        <div className="taglio bg-success text-primary"></div>
+
+        
+
+      </div>
+      
+
+
     </div>
   )
 }

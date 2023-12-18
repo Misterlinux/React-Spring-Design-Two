@@ -41,8 +41,7 @@ function Sign(){
         we will contact you at this number: ${dati.phone}
       `)
     }else if( dati.plan == "complete" ){
-      alert(`
-        Congratulations ${dati.name} for choosing the complete plan,
+      alert(`Congratulations ${dati.name} for choosing the complete plan,
         Let's getin contact at ${dati.phone}
       `)
     }else{
@@ -64,11 +63,6 @@ function Sign(){
   const [basic, setBasic] = useState(false);
   const [stem, setStem] = useState(false);
   const [compl, setCompl] = useState(false);
-
-  let destra = useSpring({
-    from: {x: 0},
-    to: {x: 300},
-  })
 
   return(
     <div className="bg-success">

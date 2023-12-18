@@ -3,10 +3,17 @@ import { animated, config, useInView, useSpring, useTransition } from "@react-sp
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Task, { useStato, useStatodis } from './Context';
 import { filter } from "lodash";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+
+import Courses from "./Courses";
 
 function Terzo(){
 
-  
   let stato = useStato()
   let [course, setCourse] = useState([true, false, false])
 
@@ -79,6 +86,7 @@ function Terzo(){
               {metti( (stile, item, ter, index)=> (
                 item &&
                 <animated.div className="col-6 col-md-4 row d-flex justify-content-center align-content-center my-4" style={stile} key={index}>
+                  <Link to={item.type} className="px-0">
                   <div className="col-12 col-md-10 d-flex justify-content-center align-items-center position-relative border border-primary border-2 quadro"> 
                     
                     <div className="sfondo" style={{ backgroundImage: `url(${item.img})` }}></div>
@@ -88,9 +96,10 @@ function Terzo(){
                     </div>
 
                   </div>
+                  </Link>
                 </animated.div>
               ))}
-
+              
             </div>
           </div>
 

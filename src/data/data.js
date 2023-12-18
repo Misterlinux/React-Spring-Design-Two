@@ -1,4 +1,4 @@
-import { faBaseballBatBall, faTree, faBusSimple, faChalkboardUser, faSchool, faUserNinja} from "@fortawesome/free-solid-svg-icons";
+import { faBaseball, faPenNib, faFire, faBaseballBatBall, faTree, faBusSimple, faChalkboardUser, faSchool, faUserNinja} from "@fortawesome/free-solid-svg-icons";
 
 //<FontAwesomeIcon icon={faChalkboardUser} />
 //<FontAwesomeIcon icon={faSchool} />
@@ -114,44 +114,73 @@ let courses = [
   {
     name: "First level Stem",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `if Mr Biden were to win he would probably have to rely on executive 
+    orders and the regulatory state to push America’s green transition forward.`,
     img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
-    type: "stem"
+    type: "stem",
+    icona: faBaseball
   },
   {
     name: "Basic Tect",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `The rule was announced at cop28 in Dubai and positions America with 
+    154 other governments who pledge to reduce methane emissions by at least 30% 
+    by 2030. The new rule will require oil and natural-gas operators to greatly 
+    reduce emissions. The epa says this new rule should reduce projected emissions`,
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
-    type: "tect"
+    type: "tech",
+    icona: faBaseball
   },
   {
     name: "Middle level Tect",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `The lacklustre outlook for economic growth, combined with 
+    the need to manage capricious autocratic leadership at home and 
+    uncertain relations with big trading partners, makes for a miserable financial climate.`,
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
-    type: "tect"
+    type: "tech",
+    icona: faPenNib
   },
   {
     name: "Intermidiate Stem",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `The lacklustre outlook for economic growth, combined with 
+    the need to manage capricious autocratic leadership at home and 
+    uncertain relations with big trading partners, makes for a miserable financial climate.`,
     img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
-    type: "stem"
+    type: "stem",
+    icona: faPenNib
   },
   {
     name: "Advanced Stem",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `The rule was announced at cop28 in Dubai and positions America with 
+    154 other governments who pledge to reduce methane emissions by at least 30% 
+    by 2030. The new rule will require oil and natural-gas operators to greatly 
+    reduce emissions. The epa says this new rule should reduce projected emissions`,
     img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
-    type: "stem"
+    type: "stem",
+    icona: faFire
   },
   {
     name: "Supplementary Tect level",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `if Mr Biden were to win he would probably have to rely on executive 
+    orders and the regulatory state to push America’s green transition forward.`,
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
-    type: "tect"
+    type: "tech",
+    icona: faTree
   },
   {
     name: "Advanced Tect",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    subject: `The rule was announced at cop28 in Dubai and positions America with 
+    154 other governments who pledge to reduce methane emissions by at least 30% 
+    by 2030. The new rule will require oil and natural-gas operators to greatly 
+    reduce emissions. The epa says this new rule should reduce projected emissions`,
     img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
-    type: "tect"
+    type: "tech",
+    icona: faFire
   },
 ]
 
