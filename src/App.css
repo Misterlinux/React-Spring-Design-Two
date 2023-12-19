@@ -8,7 +8,7 @@
   --primary: #105C49;
   --secondary: #1DA483;
   --success: #f2ad5f;
-  --danger: #c8717e;
+  --danger: #ec8717;
 }
 
 h1,h2,h3,h4{
@@ -244,7 +244,6 @@ h1,h2,h3,h4{
 
 .courseimg{
   position: absolute;
-  background-image: url("https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg");
   background-position: center center;
   background-size: cover;
   opacity: 0.7;
@@ -258,7 +257,6 @@ h1,h2,h3,h4{
   right: 0;
 
   clip-path: polygon(0% 100%, 25% 0%, 100% 0%, 75% 100%);
-
   width: 70%;
   height: 100%;
 }
@@ -269,10 +267,16 @@ h1,h2,h3,h4{
 
 .retta{
   height: 100%;
-  width: 2px;
-  background-color: black;
+  width: 3px;
+  background-color: var(--danger);
 }
 
+.triangle{
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  left: -3%; 
+  width: 12%; 
+  height: 3em;
+}
 
 /* Signin */
 
@@ -359,6 +363,28 @@ h1,h2,h3,h4{
     height: 12vh;
     width: 12vh;
     top: 24vh;
+  }
+
+  /* courses */
+
+  .courseimg{
+    clip-path: polygon(0% 0%, 5% 100%, 100% 100%, 95% 0%);
+  }
+
+  .taglio{
+    position: absolute;
+    right: 0;
+  
+    clip-path: polygon(0% 0%, 5% 100%, 100% 100%, 95% 0%);
+    width: 70%;
+    height: 100%;
+  }
+
+  .triangle{
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    left: -2%; 
+    width: 8%; 
+    height: 3em;
   }
 
 }

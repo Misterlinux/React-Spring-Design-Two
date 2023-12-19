@@ -44,7 +44,7 @@ function Perks(){
           </div>
         </div>
 
-        <div className="d-flex flex-column justify-content-center align-items-center">
+        <div className="d-flex flex-column justify-content-center align-items-center" style={{ overflowX: "hidden" }}>
           {spin((stile, items, non, index)=> (
             <animated.div className={`row mx-0 col-12 ${index % 2 ? `bg-success` : `bg-primary`} `} style={{ ...stile }} >
               <div className="col-3 d-flex justify-content-center align-items-center">
