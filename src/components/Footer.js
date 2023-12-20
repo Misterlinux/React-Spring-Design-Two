@@ -16,44 +16,83 @@ function Footer(){
 
 
   return(
-    <div className="d-flex justify-content-center py-2 bg-secondary" style={{ height: "21vh" }}>
-      <div className="row mx-0 col-12">
-        <div className="col-7 row mx-0 p-0">
+    <div className="d-flex justify-content-center py-2 bg-primary">
+      <div className="row mx-0 col-12 col-md-10">
+
+        <div className="col-5 col-md-4 row mx-0 px-0 d-flex justify-content-around align-items-center">
           
-          <h3>In sospeso</h3>
+          <h4 className="pe-1 text-danger hammer">About AccaDem</h4>
 
-          <div className="col-4 d-flex align-items-center ">
-            <FontAwesomeIcon className="p-3 bg-success border border-success rounded-circle" icon={faGithub} />
-          </div>
-          <div className="col-4 d-flex align-items-center ">
-            <FontAwesomeIcon className="p-3 bg-success border border-success rounded-circle" icon={faLinkedin} />
-          </div>
-          <div className="col-4 d-flex align-items-center ">
-            <FontAwesomeIcon className="p-3 bg-success border border-success rounded-circle" icon={faCodepen} />
-          </div>
+          <p className="pe-0 text-success">
+            Lorem ipsum dolor, sit amet consec tetur adipis icing elit. 
+            Sed libero in deleniti ea reprehenderit molestias.
+          </p>
+
         </div>
 
-        <div className="col-5 ">
-          <h3 className="text-center">Contact us</h3>
+        <div className="col-4 d-none d-md-flex flex-column justify-content-around">
 
-          <div className="d-flex flex-column justify-content-center">
+          <h4 className="hammer text-danger text-center">Our Socials</h4>
 
-            <div className="d-flex">
-              <FontAwesomeIcon icon={faPhone} /> 
-              <p className="ps-1"> 123-4567890 </p>
+          <div className="d-flex justify-content-around">
+            <div className="d-flex align-items-center justify-content-around ">
+              <FontAwesomeIcon className="p-3 bg-success border border-success rounded-circle" icon={faGithub} />
             </div>
-            <div className="d-flex">
-              <FontAwesomeIcon icon={faMapLocationDot} />
-              <p className="ps-1"> St. Lorem, ipsum </p>
+            <div className="d-flex align-items-center ">
+              <FontAwesomeIcon className="p-3 bg-success border border-success rounded-circle" icon={faLinkedin} />
             </div>
-            <div className="d-flex "> 
-              <FontAwesomeIcon icon={faMapLocationDot} />
-              <p className="ps-1"> lorem@mail.com </p>
+            <div className="d-flex align-items-center ">
+              <FontAwesomeIcon className="p-3 bg-success border border-success rounded-circle" icon={faCodepen} />
             </div>
-
           </div>
+
         </div>
-        
+
+        <div className="col-2 d-md-none d-flex flex-column justify-content-around align-items-center">
+          
+          <div className="d-flex align-items-center">
+            
+            <FontAwesomeIcon className="p-3 p-md-2 bg-success border border-success rounded-circle" icon={faGithub} />
+          
+          </div>
+          <div className="d-flex align-items-center ">
+            <FontAwesomeIcon className="p-3 p-md-2 bg-success border border-success rounded-circle" icon={faLinkedin} />
+          </div>
+          <div className="d-flex align-items-center ">
+            <FontAwesomeIcon className="p-3 p-md-2 bg-success border border-success rounded-circle" icon={faCodepen} />
+          </div>
+
+        </div>
+
+
+        <div className="row mx-0 col-5 col-md-4 px-0 d-flex justify-content-around align-items-center text-success">
+
+          <h4 className="text-danger hammer">Contact us</h4>
+          
+          <div className="col-3 col-md-2 pe-0">
+            <FontAwesomeIcon icon={faPhone} /> 
+          </div>
+          <div className="col-9 col-md-10 ps-1 text-break">
+            1234567890
+          </div>
+
+          <div className="col-3 col-md-2 pe-0">
+            <FontAwesomeIcon icon={faMapLocationDot} />
+          </div>
+          <div className="col-9 col-md-10 ps-1">
+            St. Lorem, ipsum
+          </div>
+
+          <div className="col-3 col-md-2 pe-0">
+            <FontAwesomeIcon className="d-flex" icon={faEnvelope} />
+          </div>
+          <div className="col-9 col-md-10 text-break ps-1">
+            AccaDem@lorem.com
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>

@@ -18,7 +18,7 @@ function Terzo(){
   let [course, setCourse] = useState([true, false, false])
 
   let [seecors, setSeecors] = useState( stato.courses ) 
-  let filters = ["", "stem", "tect"]
+  let filters = ["", "stem", "tech"]
 
   function quale(indice){
 

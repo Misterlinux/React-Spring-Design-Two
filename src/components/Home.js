@@ -29,8 +29,6 @@ function Home(){
       <Quinto />
       <Footer />
 
-      <Extra />
-
     </div>
   )
 }
