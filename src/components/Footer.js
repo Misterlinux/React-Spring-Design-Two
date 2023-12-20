@@ -51,15 +51,19 @@ function Footer(){
         <div className="col-2 d-md-none d-flex flex-column justify-content-around align-items-center">
           
           <div className="d-flex align-items-center">
-            
+            <a className="text-dark" href="https://github.com/Misterlinux/React-Spring-Design-Two">
             <FontAwesomeIcon className="p-3 p-md-2 bg-success border border-success rounded-circle" icon={faGithub} />
-          
+            </a>
           </div>
           <div className="d-flex align-items-center ">
+            <a className="text-dark" href="https://github.com/Misterlinux/React-Spring-Design-Two">
             <FontAwesomeIcon className="p-3 p-md-2 bg-success border border-success rounded-circle" icon={faLinkedin} />
+            </a>
           </div>
           <div className="d-flex align-items-center ">
+            <a className="text-dark" href="https://codesandbox.io/dashboard/recent">
             <FontAwesomeIcon className="p-3 p-md-2 bg-success border border-success rounded-circle" icon={faCodepen} />
+            </a>
           </div>
 
         </div>
