@@ -1,11 +1,19 @@
-import React from "react";
-import { animated, useSprings, useInView, useSpring, config } from '@react-spring/web'
+import { useEffect } from "react";
+import { animated, useInView, useSpring, config } from '@react-spring/web'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faBaseballBatBall, faTree, faBusSimple} from "@fortawesome/free-solid-svg-icons";
 import Task, { useStato, useStatodis } from './Context';
 
 function Prof(){
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   let stato = useStato();
 
@@ -54,23 +62,21 @@ function Prof(){
     <div>
 
       <div className="row mx-0">
+        <div className="col-1 d-none d-md-flex bg-success"></div>
 
-      <div className="col-1 d-none d-md-flex bg-success"></div>
+        <div className="col-12 col-md-10 px-0 d-flex justify-content-center align-items-center bg-success" style={{ height: "15vh" }}>
+          <div className="preprof"></div>
+          <h1 className="position-absolute hammer text-primary p-1 bg-success" style={{ zIndex: 2 }} >
+            The professors at AccaDem
+          </h1>
+        </div>
 
-      <div className="col-12 col-md-10 px-0 d-flex justify-content-center align-items-center bg-success" style={{ height: "15vh" }}>
-        <div className="preprof"></div>
-        <h1 className="position-absolute hammer text-primary p-1 bg-success" style={{ zIndex: 2 }} >
-          The professors at AccaDem
-        </h1>
-      </div>
-
-      <div className="col-1 d-none d-md-flex bg-success"></div>
-
+        <div className="col-1 d-none d-md-flex bg-success"></div>
       </div>
 
       <div className="bg-primary row mx-0 d-flex justify-content-center py-3">
 
-      { stato.profs.map((cont, index)=> {
+      {stato.profs.map((cont, index)=> {
 
         return (
           <div
@@ -87,14 +93,9 @@ function Prof(){
 
             <animated.div
               className="exagon bg-primary position-absolute d-flex justify-content-center align-items-center"
-              style={{
-                transform: stile(cont.id).transform,
-              }}
+              style={{ transform: stile(cont.id).transform }}
             >
-              <FontAwesomeIcon
-                className="text-success"
-                icon={ cont.icon }
-              />
+              <FontAwesomeIcon className="text-success" icon={ cont.icon } />
             </animated.div>
 
             <div className="bg-success w-100 px-2 pb-2 position-relative" >
@@ -111,15 +112,13 @@ function Prof(){
                 ></animated.div>
               </div>
 
-              <p className="mt-1">
+              <p className="mt-1 ">
                 {cont.present}
               </p>
             </div>
           </div>
         );} ) }
       </div>
-
-      <div style={{ height: "50vh" }}></div>
 
     </div>
   )

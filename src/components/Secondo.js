@@ -20,21 +20,16 @@ function Secondo(){
     config: {duration: 1000}
   })
   
-
   return (
     <>
       <div className="d-flex justify-content-center bg-danger">
-        <div
-          className="row col-12 col-md-11 position-relative d-flex align-items-center secondwind"
-        >
-          <div
-            className="col-6 col-md-5 position-absolute secondimg"
-          >
+        <div className="row col-12 col-md-11 position-relative secondwind">
+
+          <div className="col-6 col-md-5 position-absolute secondimg" >
             <div className="perksimg border border-3 border-success"></div>
           </div>
-          <div
-            className="col-7 position-absolute bg-primary d-flex flex-column justify-content-center align-items-end secondtext"
-          >
+
+          <div className="col-7 position-absolute bg-primary secondtext">
             <div className="col-10 row mx-0">
               <h1 className="text-white"> What we offer </h1>
               <p className="text-white">
@@ -52,20 +47,19 @@ function Secondo(){
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
       <div className="d-flex" ref={terzo}>
         <div className="row mx-0 col-12">
+
           {stato.perks.map((cont, index) => (
             <animated.div key={index}
               className={`d-flex flex-column justify-content-center align-items-center col-4 col-md-2`}
               style={{ backgroundColor: index % 2 ? back2 : back1 }}
             >
-              <div
-                className="position-relative d-flex justify-content-center align-items-center"
-                style={{ height: "3.5em", paddingTop: "2em", paddingBottom: "2em" }}
-              >
+              <div className="position-relative iconcircle">
                 <div className="circle"></div>
                 <FontAwesomeIcon
                   className="text-primary"
@@ -90,6 +84,7 @@ function Secondo(){
               </div>
             </animated.div>
           ))}
+
         </div>
       </div>
     </>

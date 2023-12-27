@@ -104,7 +104,7 @@ function Quinto(){
         </div>
 
         <div className="row mx-0 col-9 digitwindow p-2">
-          <h1 className="col-4 row mx-0 p-0 ">
+          <h1 className="col-4 row mx-0 p-0">
 
             {deora((stile, cont) => (
               <animated.div className="col-5 digit" style={stile}> 

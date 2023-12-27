@@ -1,8 +1,20 @@
-import {useState} from "react";
+import { useState, useEffect } from "react";
 import { useSprings, useChain, useSpringRef, animated, config, useSpring} from "@react-spring/web";
 import Collapse from 'react-bootstrap/Collapse';
 
+import basicimg from "../images/basic.jpg"
+import interimg from "../images/intermediate.jpg"
+import advance from "../images/advance.jpg"
+ 
 function Sign(){
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   const colonna0 = useSpringRef()
   const colonna1 = useSpringRef()
@@ -77,14 +89,14 @@ function Sign(){
           </div>
 
           <div style={{ height: "15vh" }}>
-            <div className="basic" style={{ backgroundImage: "url(https://i.pinimg.com/236x/6f/bc/bb/6fbcbb4e2080b8c29288db2f5e3b4a98.jpg)" }}></div>
+            <div className="basic" style={{ backgroundImage: `url(${basicimg})` }}></div>
           </div>
 
-          <div>
+          <animated.div className="hammer pe-2" style={left[0]}>
             <div className="py-1">- Access to all basic classes.</div>
             <div className="py-1">- Access to one intermediate class</div>
             <div className="py-1">- Montly mentor review session </div>
-          </div>
+          </animated.div>
 
         </div>
 
@@ -96,10 +108,10 @@ function Sign(){
           </div>
 
           <div style={{ height: "15vh" }}>
-            <div className="basic" style={{ backgroundImage: "url(https://i.pinimg.com/236x/dd/30/14/dd301435d76051d80e13391b099a8dc3.jpg)" }}></div>
+            <div className="basic" style={{ backgroundImage: `url(${interimg})` }}></div>
           </div>
 
-          <animated.div style={left[1]}>
+          <animated.div className="hammer pe-2" style={left[1]}>
             <div className="py-1">- Access to all basic classes.</div>
             <div className="py-1">- Access to intermediate/advanced Stem or Tech courses</div>
             <div className="py-1">- Bi-weekly mentor review session</div>
@@ -116,15 +128,15 @@ function Sign(){
           </div>
 
           <div style={{ height: "15vh" }}>
-            <div className="basic" style={{ backgroundImage: "url(https://i.pinimg.com/236x/e4/f6/44/e4f6444bf1ed00969a69141baa74676c.jpg)" }}></div>
+            <div className="basic" style={{ backgroundImage: `url(${advance})` }}></div>
           </div>
 
-          <animated.div style={left[2]}>
-            <div className="py-1">- Access to all basic classes.</div>
-            <div className="py-1">- Access to all intermediate and advanced classes.</div>
-            <div className="py-1">- Weekly mentor review session</div>
-            <div className="py-1">- Access to all Stem/Tech workshops</div>
-            <div className="py-1">- Free parking and bike sharing</div>
+          <animated.div className="hammer pe-2" style={left[2]}>
+            <div className="py-1 pe-2">- Access to all basic classes.</div>
+            <div className="py-1 pe-2">- Access to all intermediate and advanced classes.</div>
+            <div className="py-1 pe-2">- Weekly mentor review session</div>
+            <div className="py-1 pe-2">- Access to all Stem/Tech workshops</div>
+            <div className="py-1 pe-2">- Free parking and bike sharing</div>
           </animated.div>
 
         </div>
@@ -172,7 +184,7 @@ function Sign(){
       </div>
 
 
-      <div className="d-flex justify-content-center row mx-0">
+      <div className="d-flex d-md-none justify-content-center row mx-0">
 
         <animated.div onClick={ () => setBasic(!basic) } style={ left[0] }
             className="bg-primary text-success hammer col-10 px-0 mb-3 d-flex flex-column justify-content-center align-items-center">
@@ -185,7 +197,7 @@ function Sign(){
             </div>          
 
             <div className="col-5 px-0" style={{ height: "15vh" }}>
-              <div className="basic" style={{ backgroundImage: "url(https://i.pinimg.com/236x/6f/bc/bb/6fbcbb4e2080b8c29288db2f5e3b4a98.jpg)" }}></div>
+              <div className="basic" style={{ backgroundImage: `url(${basicimg})` }}></div>
             </div>
 
             <div className="bg-success position-absolute d-flex justify-content-center align-self-end cupola">
@@ -216,7 +228,7 @@ function Sign(){
             </div>          
 
             <div className="col-5 px-0" style={{ height: "15vh" }}>
-              <div className="basic" style={{ backgroundImage: "url(https://i.pinimg.com/236x/dd/30/14/dd301435d76051d80e13391b099a8dc3.jpg)" }}></div>
+              <div className="basic" style={{ backgroundImage: `url(${interimg})` }}></div>
             </div>
 
             <div className="bg-success position-absolute d-flex justify-content-center align-self-end cupola">
@@ -247,7 +259,7 @@ function Sign(){
             </div>          
 
             <div className="col-5 px-0" style={{ height: "15vh" }}>
-              <div className="basic" style={{ backgroundImage: "url(https://i.pinimg.com/236x/e4/f6/44/e4f6444bf1ed00969a69141baa74676c.jpg)" }}></div>
+              <div className="basic" style={{ backgroundImage: `url(${advance})` }}></div>
             </div>
 
             <div className="bg-success position-absolute d-flex justify-content-center align-self-end cupola">

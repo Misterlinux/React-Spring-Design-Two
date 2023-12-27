@@ -1,5 +1,5 @@
 import { useReducer, useContext, createContext} from 'react';
-import { profs, perki, corsi, gallerie } from '../data/data';
+import { profs, perks, courses, gallery, gallerypage } from '../data/data';
 
 const Stato = createContext(null);
 const Statodis = createContext(null);
@@ -10,7 +10,7 @@ export default function Task({children}){
     throw Error('Unknown action: ' + action.type);
   }
 
-  const initialState = { age: 42, name: "testo", perks: perki(), courses: corsi(), gallery: gallerie(), profs: profs};
+  const initialState = {perks: perks, courses: courses, gallery: gallery, profs: profs, gallerypage: gallerypage };
   const [instate] = useReducer(reducer, initialState);
 
   return (

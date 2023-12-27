@@ -9,16 +9,10 @@ import {
 } from "react-router-dom";
 
 import Task, { useStato, useStatodis } from './Context';
+import stem from "../images/stem.jpg";
+import tech from "../images/tech.jpg"
 
 function Road({facol}){
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant",
-    });
-  }, []);
 
   let stato = useStato()
   let campi = stato.courses.filter((cont)=> cont.type == facol)
@@ -51,7 +45,6 @@ function Road({facol}){
 
           <div className="retta position-absolute"> 
           </div>
-
         </div>
 
         <div className="position-relative col-10 col-md-11 d-flex flex-column justify-content-center p-2"> 
@@ -67,6 +60,7 @@ function Road({facol}){
             </animated.p>
           </div>
         </div>
+
       </div>
       </div>
     ))}
@@ -75,8 +69,15 @@ function Road({facol}){
   )
 }
 
-
 function Courses(){
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   let {texto, ...entra} = useSpring({
     from: {opacity: 0.5, x: -500, texto: 0.2},
@@ -95,7 +96,7 @@ function Courses(){
       <div className="d-flex justify-content-center bg-success" style={{ height: "15vh" }}>
         <div className="row mx-0 col-12 col-md-9 position-relative">
 
-          <div className="courseimg" style={{ backgroundImage: `url( ${ location == "stem" ? "https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg" : "https://i.pinimg.com/736x/e4/f6/44/e4f6444bf1ed00969a69141baa74676c.jpg" } )` }}>
+          <div className="courseimg" style={{ backgroundImage: `url( ${ location == "stem" ? stem : tech } )` }}>
           </div>
 
           <animated.div style={entra}
@@ -116,9 +117,6 @@ function Courses(){
         <Road facol={location} />
       )}
   
-      <div style={{ height: "50vh" }}>
-      </div>
-
     </div>
   )
 }

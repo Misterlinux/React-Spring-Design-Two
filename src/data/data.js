@@ -1,8 +1,29 @@
 import { faBaseball, faPenNib, faFire, faBaseballBatBall, faTree, faBusSimple, faChalkboardUser, faSchool, faUserNinja} from "@fortawesome/free-solid-svg-icons";
+import stem from "../images/stem.jpg"
+import tech from "../images/tech.jpg"
 
-//<FontAwesomeIcon icon={faChalkboardUser} />
-//<FontAwesomeIcon icon={faSchool} />
-//<FontAwesomeIcon icon={faUserNinja} />
+import winter from "../images/winter.jpg"
+import gallery2 from "../images/gallery2.jpg"
+import gallery3 from "../images/gallery3.jpg"
+
+import accadem from "../images/accadem.jpg"
+import advance from "../images/advance.jpg"
+import intermediate from "../images/intermediate.jpg"
+import perksimg from "../images/perksimg.jpg"
+import sign from "../images/sign.png"
+
+export let gallerypage = [
+  {css: stem, height: 300},
+  {css: tech, height: 100},
+  {css: winter, height: 200},
+  {css: gallery2, height: 300},
+  {css: gallery3, height: 150},
+  {css: accadem, height: 300},
+  {css: advance, height: 150},
+  {css: intermediate, height: 200},
+  {css: perksimg, height: 300},
+  {css: sign, height: 200}
+]
 
 export let profs = [
   {
@@ -69,11 +90,7 @@ export let profs = [
   }
 ]
 
-export function profes(){
-  return profs
-}
-
-let perks = [
+export let perks = [
   {
     perk: "Sport activities",
     icona: faBaseballBatBall
@@ -100,11 +117,9 @@ let perks = [
   },
 ]
 
-export function perki(){
-  return perks;
-}
+//import stem from "../images/stem.jpg"
 
-let courses = [
+export let courses = [
   {
     name: "Introduction to Math",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -116,7 +131,7 @@ let courses = [
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     subject: `if Mr Biden were to win he would probably have to rely on executive 
     orders and the regulatory state to push America’s green transition forward.`,
-    img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
+    img: stem,
     type: "stem",
     icona: faBaseball
   },
@@ -127,7 +142,7 @@ let courses = [
     154 other governments who pledge to reduce methane emissions by at least 30% 
     by 2030. The new rule will require oil and natural-gas operators to greatly 
     reduce emissions. The epa says this new rule should reduce projected emissions`,
-    img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
+    img: tech,
     type: "tech",
     icona: faBaseball
   },
@@ -137,7 +152,7 @@ let courses = [
     subject: `The lacklustre outlook for economic growth, combined with 
     the need to manage capricious autocratic leadership at home and 
     uncertain relations with big trading partners, makes for a miserable financial climate.`,
-    img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
+    img: tech,
     type: "tech",
     icona: faPenNib
   },
@@ -147,7 +162,7 @@ let courses = [
     subject: `The lacklustre outlook for economic growth, combined with 
     the need to manage capricious autocratic leadership at home and 
     uncertain relations with big trading partners, makes for a miserable financial climate.`,
-    img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
+    img: stem,
     type: "stem",
     icona: faPenNib
   },
@@ -158,7 +173,7 @@ let courses = [
     154 other governments who pledge to reduce methane emissions by at least 30% 
     by 2030. The new rule will require oil and natural-gas operators to greatly 
     reduce emissions. The epa says this new rule should reduce projected emissions`,
-    img: "https://i.pinimg.com/236x/4f/15/20/4f1520d4c04ddc4632821ba6621c806e.jpg",
+    img: stem,
     type: "stem",
     icona: faFire
   },
@@ -167,7 +182,7 @@ let courses = [
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     subject: `if Mr Biden were to win he would probably have to rely on executive 
     orders and the regulatory state to push America’s green transition forward.`,
-    img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
+    img: tech,
     type: "tech",
     icona: faTree
   },
@@ -178,31 +193,25 @@ let courses = [
     154 other governments who pledge to reduce methane emissions by at least 30% 
     by 2030. The new rule will require oil and natural-gas operators to greatly 
     reduce emissions. The epa says this new rule should reduce projected emissions`,
-    img: "https://i.pinimg.com/236x/aa/3d/9d/aa3d9d54941fbd3a50c21ecf73ce74ff.jpg",
+    img: tech,
     type: "tech",
     icona: faFire
   },
 ]
 
-export function corsi(){
-  return courses;
-}
 
-let gallery = [
+export let gallery = [
   {
-    img: "https://i.pinimg.com/736x/2d/df/bb/2ddfbb94c62d51d3b0010b54adfd6b73.jpg",
+    img: winter,
     name: "Check our Winter Season Image gallery",
   },
   {
-    img: "https://i.pinimg.com/236x/8d/37/d8/8d37d898d90333df93a5caf9fa4688c6.jpg",
+    img: gallery2,
     name: "Check our Middle Season Image gallery",
   },
   {
-    img: "https://i.pinimg.com/236x/07/b5/b9/07b5b9f83d4dd557a93b31d1250c65f8.jpg",
+    img: gallery3,
     name: "Check our Open Season Image gallery",
   },
 ]
 
-export function gallerie(){
-  return gallery;
-}

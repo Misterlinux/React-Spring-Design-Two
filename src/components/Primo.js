@@ -22,9 +22,9 @@ function Primo(){
 
       <div className="d-flex justify-content-center bg-primary">
         <div style={{ overflowX: "hidden" }}
-          className="row col-md-11 col-12 mx-0 position-relative bg-primary d-flex align-items-center justify-content-center totalwindow">
+          className="row col-md-11 col-12 mx-0 bg-primary totalwindow">
 
-          <div className="col-7 d-flex flex-column justify-content-center align-items-start text-white position-absolute present">
+          <div className="col-7 text-white position-absolute present">
             <h1 className="hammer">Welcome to the AccaDem</h1>
             <p> Where you can develp you stuff </p>
 

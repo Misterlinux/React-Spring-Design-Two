@@ -1,13 +1,8 @@
-import React from "react";
-
 import Primo from "./Primo";
 import Secondo from "./Secondo";
 import Terzo from "./Terzo";
 import Quarto from "./Quarto";
 import Quinto from "./Quinto";
-import Footer from "./Footer";
-
-import Extra from "./Extra";
 
 function Home(){
 
@@ -27,7 +22,6 @@ function Home(){
       <Terzo />
       <Quarto />
       <Quinto />
-      <Footer />
 
     </div>
   )

@@ -1,17 +1,13 @@
 import {useEffect, useState, useRef, useMemo} from "react";
-import dayjs from 'dayjs';
 import { useSpring, useTransition, animated} from "@react-spring/web";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faMapLocationDot, faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
-//npm install dayjs
 //we return an object withall data properties
 //we can put an argument in it for specific
 
 function Footer(){
-
-
 
 
 

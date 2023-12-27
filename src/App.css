@@ -11,7 +11,7 @@
   --danger: #ec8717;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
   margin-bottom: 0;
 }
 
@@ -36,17 +36,34 @@ h1,h2,h3,h4{
   flex-grow: 0;
 }
 
+.navlist h5{
+  color: var(--success);
+  display: flex;
+}
+
+.navlist a:last-child h5{
+  border-bottom: 1px solid var(--success);
+}
+
 /* --primo-- */
 
 .totalwindow{
   height: 42vh;
-  /*width: 100vw; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .present{
   z-index: 2;
   height: 40vh;
   left: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .back{
@@ -55,7 +72,7 @@ h1,h2,h3,h4{
 }
 
 .ground{
-  background-image: url("https://i.pinimg.com/originals/e6/35/92/e63592d336bde183bf464e18f4980f1f.jpg");
+  background-image: url("./images/accadem.jpg");
   background-size: cover;
   background-position: center center;
   height: 100%;
@@ -73,6 +90,8 @@ h1,h2,h3,h4{
 
 .secondwind{
   height: 42vh;
+  display: flex;
+  align-items: center;
 }
 
 .secondimg{
@@ -84,14 +103,29 @@ h1,h2,h3,h4{
 .secondtext{
   right: 4%;
   height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .perksimg{
-  background-image: url("https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg");
+  background-image: url("./images/perks.jpg");
   background-size: cover;
   background-position: center center;
   
   height: 100%;
+}
+
+.iconcircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3.5em; 
+  padding-top: 2em; 
+  padding-bottom: 2em;
 }
 
 .circle{
@@ -128,6 +162,10 @@ h1,h2,h3,h4{
 
 .quadro{
   height: 20vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sfondo{
@@ -159,7 +197,7 @@ h1,h2,h3,h4{
 }
 
 .backo{
-  background-image: url("https://i.pinimg.com/originals/ca/a2/8c/caa28c3b19efb35212a54724b83aa600.png");
+  background-image: url("./images/sign.png");
   background-size: cover;
   background-position: center center;
   opacity: 0.6;
@@ -232,7 +270,7 @@ h1,h2,h3,h4{
 /* Perks */
 
 .dietro{
-  background-image: url("https://i.pinimg.com/236x/01/e5/a0/01e5a078f041cb1f822187f179ccd1b9.jpg");
+  background-image: url("./images/perksimg.jpg");
   background-size: cover;
   background-position: center 20%;
   opacity: 0.6;
@@ -256,7 +294,7 @@ h1,h2,h3,h4{
   position: absolute;
   right: 0;
 
-  clip-path: polygon(0% 100%, 25% 0%, 100% 0%, 75% 100%);
+  clip-path: polygon(0% 101%, 25% 0%, 100% 0%, 75% 101%);
   width: 70%;
   height: 100%;
 }
@@ -292,6 +330,25 @@ h1,h2,h3,h4{
   clip-path: ellipse(49% 100% at 50% 100%);
 }
 
+/* gallery images */
+
+.list {
+  position: relative;
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.list > div {
+  position: absolute;
+  padding: 15px;
+}
+
+.list > div > div {
+  background-size: cover;
+  background-position: center center;
+  /*width: 100%;*/
+  height: 100%;
+}
 
 @media only screen and (max-width: 400px){
   .quadro{
@@ -301,9 +358,24 @@ h1,h2,h3,h4{
 
 @media only screen and (min-width: 800px) {
 
+  /* --navbar-- */
+  .navlist h5{
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+
+    border-right: 2px solid var(--success);
+  }
+
+  .navlist a:last-child h5{
+    border-right: none;
+    border-bottom: none;
+  }
+
+  /* --primo-- */
+
   .totalwindow{
     height: 60vh;
-    /*width: 100vw;*/ 
   }
   
   .present{
@@ -350,6 +422,7 @@ h1,h2,h3,h4{
 
   .digit{
     font-size: 1.8em;
+    border: 3px solid var(--primary);
   }
 
   /* --prof-- */
