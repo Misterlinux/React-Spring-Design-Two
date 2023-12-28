@@ -360,6 +360,16 @@ h1,h2,h3,h4,h5{
   height: 100%;
 }
 
+/* footer */
+
+.contacts{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
 @media only screen and (max-width: 400px){
   .quadro{
     height: 30vh;
@@ -468,6 +478,12 @@ h1,h2,h3,h4,h5{
     left: -2%; 
     width: 8%; 
     height: 3em;
+  }
+
+  /* footer */
+
+  .contacts{
+    height: 60%;
   }
 
 }

@@ -21,7 +21,7 @@ function alto(){
 }
 
 export let gallerypage = [
-  {css: stem, height: alto()},
+  {css: stem, height: 250},
   {css: tech, height: alto()},
   {css: winter, height: alto()},
 

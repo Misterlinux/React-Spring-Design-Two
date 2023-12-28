@@ -15,14 +15,16 @@ function Footer(){
     <div className="d-flex justify-content-center py-2 bg-primary">
       <div className="row mx-0 col-12 col-md-10">
 
-        <div className="col-5 col-md-4 row mx-0 px-0 d-flex justify-content-around align-items-center">
+        <div className="col-5 col-md-4 row mx-0 px-0 ">
           
-          <h4 className="pe-1 text-danger hammer">About AccaDem</h4>
+          <h4 className="pe-1 py-1 text-danger hammer">About AccaDem</h4>
 
-          <p className="pe-0 text-success">
-            Lorem ipsum dolor, sit amet consec tetur adipis icing elit. 
-            Sed libero in deleniti ea reprehenderit molestias.
-          </p>
+          <div className="d-flex align-items-center">
+            <p className="mb-0 pe-0 text-success">
+              Lorem ipsum dolor, sit amet consec tetur adipis icing elit. 
+              Sed libero in deleniti ea reprehenderit molestias.
+            </p>
+          </div>
 
         </div>
 
@@ -65,33 +67,41 @@ function Footer(){
         </div>
 
 
-        <div className="row mx-0 col-5 col-md-4 px-0 d-flex justify-content-around align-items-center text-success">
+        <div className="row mx-0 col-5 col-md-4 px-0 text-success">
 
-          <h4 className="text-danger hammer">Contact us</h4>
+          <h4 className="text-danger py-1 hammer">Contact us</h4>
           
-          <div className="col-3 col-md-2 pe-0">
-            <FontAwesomeIcon icon={faPhone} /> 
-          </div>
-          <div className="col-9 col-md-10 ps-1 text-break">
-            1234567890
-          </div>
+          <div className="contacts px-0 justify-content-around">
 
-          <div className="col-3 col-md-2 pe-0">
-            <FontAwesomeIcon icon={faMapLocationDot} />
-          </div>
-          <div className="col-9 col-md-10 ps-1">
-            St. Lorem, ipsum
-          </div>
+            <div className="row col-12 mx-0">
+              <div className="col-3 col-md-2 pe-0 align-self-center">
+                <FontAwesomeIcon icon={faPhone} /> 
+              </div>
+              <div className="col-9 col-md-10 ps-1 pe-0 text-break">
+                1234567890
+              </div>
+            </div>
 
-          <div className="col-3 col-md-2 pe-0">
-            <FontAwesomeIcon className="d-flex" icon={faEnvelope} />
-          </div>
-          <div className="col-9 col-md-10 text-break ps-1">
-            AccaDem@lorem.com
-          </div>
+            <div className="row col-12 mx-0">
+              <div className="col-3 col-md-2 pe-0 align-self-center">
+                <FontAwesomeIcon icon={faMapLocationDot} />
+              </div>
+              <div className="col-9 col-md-10 ps-1">
+                St. Lorem, ipsum
+              </div>
+            </div>
 
+            <div className="row col-12 mx-0">
+              <div className="col-3 col-md-2 pe-0 align-self-center">
+                <FontAwesomeIcon className="d-flex" icon={faEnvelope} />
+              </div>
+              <div className="col-9 col-md-10 text-break ps-1">
+                AccaDem@lorem.com
+              </div>
+            </div>
+
+          </div>
         </div>
-
 
       </div>
 
