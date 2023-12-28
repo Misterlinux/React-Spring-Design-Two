@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import Prof from "./components/Prof";
 import Perks from "./components/Perks";
 import Courses from "./components/Courses";
+
 import Gallery from "./components/Gallery";
 import Sign from "./components/Sign";
 import Footer from "./components/Footer";

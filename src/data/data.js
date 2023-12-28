@@ -12,17 +12,30 @@ import intermediate from "../images/intermediate.jpg"
 import perksimg from "../images/perksimg.jpg"
 import sign from "../images/sign.png"
 
+import basic from "../images/basic.jpg"
+import perkss from "../images/perks.jpg"
+
+function alto(){
+
+  return 100 + 50 *(Math.floor( Math.random() *6 ) );
+}
+
 export let gallerypage = [
-  {css: stem, height: 300},
-  {css: tech, height: 100},
-  {css: winter, height: 200},
-  {css: gallery2, height: 300},
-  {css: gallery3, height: 150},
-  {css: accadem, height: 300},
-  {css: advance, height: 150},
-  {css: intermediate, height: 200},
-  {css: perksimg, height: 300},
-  {css: sign, height: 200}
+  {css: stem, height: alto()},
+  {css: tech, height: alto()},
+  {css: winter, height: alto()},
+
+  {css: gallery2, height: alto()},
+  {css: gallery3, height: alto()},
+  {css: accadem, height: alto()},
+  
+  {css: advance, height: alto()},
+  {css: intermediate, height: alto()},
+  {css: perksimg, height: alto()},
+
+  {css: sign, height: alto()},
+  {css: perkss, height: alto()},
+  {css: basic, height: alto()}
 ]
 
 export let profs = [

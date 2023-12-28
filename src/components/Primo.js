@@ -8,6 +8,9 @@ import {
 
 function Primo(){
 
+  let stato = useStato()
+  let Data = stato.gallerypage
+
   let [primo, inPrimo] = useInView()
 
   let {xbtn, ximg} = useSpring({

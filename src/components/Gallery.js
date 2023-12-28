@@ -33,23 +33,23 @@ function Gallery(){
   let vol = useRef(0)
   let volta = vol.current
 
+  //We are comparing an array index to an array lenght, we need the <=
+  //instead of Data[volta]
   function add(){
-    volta += 1
 
     if( volta < Data.length ){
-      console.log("added at " + volta + " " + Data.length )
-      setImages((x)=> ( [...x, Data[volta] ] ))
+      let next = Data[volta]
+      setImages((x)=> ( [...x, next ] ))
     }else{
       console.log("all images added")
     }
+
+    volta += 1
   }
 
 
   let inter;
 
-  //For some reason, even if we arelooping without conditon in a useEffect with its
-  //dependency, any othercoe will play only once
-  //which means we can have a starting element 
   useEffect(()=>{
     add()
     
@@ -70,7 +70,6 @@ function Gallery(){
     let alto = new Array(columns).fill(0) 
 
     let tutto = images.map((cont, index)=> {
-
       const column = alto.indexOf(Math.min(...alto)) 
       const x = (width / columns) * column 
       const y = (alto[column] += cont.height ) - cont.height 
@@ -80,6 +79,7 @@ function Gallery(){
 
     return [alto, tutto]
   }, [columns, images, width])
+
 
   let transitions = useTransition(tutto, {
     key: item => item.css,
@@ -91,18 +91,30 @@ function Gallery(){
     trail: 5,
   })
 
-
   //{ backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)`}
   return (
-    <div>
+    <div className="bg-success">
+      
+      <div className="row mx-0 bg-danger position-relative d-flex justify-content-center align-items-center" 
+           style={{ height: "4em" }}>
+
+        <div className="galleria"></div>
+
+        <h2 className="text-primary text-center hammer position-absolute">
+          <b>Our Gallery</b>
+        </h2>
+      </div>
 
       <div ref={ref} className="list" style={{ height: Math.max(...alto) }}>
         
         {transitions((style, item) => (
           <animated.div style={style}>
-            <div style={{
-              backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)`
-            }} />
+            <div 
+              className="border border-4 border-primary"
+              style={{
+                backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)`
+              }} 
+            />
           </animated.div>
         ))}
 

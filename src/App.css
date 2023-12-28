@@ -332,6 +332,16 @@ h1,h2,h3,h4,h5{
 
 /* gallery images */
 
+.galleria{
+  background-image: url("./images/basic.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  opacity: 0.35;
+  height: 100%;
+  width: 100%;
+}
+
 .list {
   position: relative;
   width: 100%;
@@ -340,7 +350,7 @@ h1,h2,h3,h4,h5{
 
 .list > div {
   position: absolute;
-  padding: 15px;
+  padding: 12px;
 }
 
 .list > div > div {
