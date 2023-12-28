@@ -3,6 +3,7 @@ import {
   Link,
   Route,
   Routes,
+  useLocation,
 } from "react-router-dom";
 import Task, { useStato, useStatodis } from "./components/Context"
 
@@ -25,7 +26,10 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
 
+
   function Navbarra(){
+    
+    const location = useLocation().pathname.split("/")[1]
 
     return(
       <div className="d-flex bg-primary justify-content-center">
@@ -49,7 +53,7 @@ function App() {
                 <Link to="perks">
                   <h5 className="hammer py-md-0 py-1">Perks</h5>                
                 </Link>
-                <Link to="sign">
+                <Link to={location == "stem" ? "tech" : "stem"}>
                   <h5 className="hammer py-md-0 py-1">Courses</h5>
                 </Link>
                 <Link to="sign">

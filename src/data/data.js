@@ -137,7 +137,7 @@ export let courses = [
     name: "Introduction to Math",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     img: "https://i.pinimg.com/236x/83/68/56/836856c54b253b3ae707bb1911118c72.jpg",
-    type: "basic"
+    type: ""
   },
   {
     name: "First level Stem",

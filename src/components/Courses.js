@@ -27,7 +27,7 @@ function Road({facol}){
   })
   
   return (
-    <div className="pt-2 bg-primary">
+    <div className="pt-2 bg-primary border-bottom border-2 border-success">
 
     {campi.map((cont, index, row)=> (
 

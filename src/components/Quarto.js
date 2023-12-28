@@ -50,17 +50,18 @@ function Quarto(){
         )}
         </div>
         
+
         <div className="d-flex d-md-none justify-content-center" ref={desc}>
 
           <Carousel className="py-3 col-12">
             {stato.gallery.map((cont, index)=>(
 
-              <Carousel.Item key={index} interval={2000}>
+              <Carousel.Item key={index} interval={200000}>
                 
               <div className="row mx-0 d-flex justify-content-center" style={{ height: "65vh" }} key={index}>
                 
                 <Link to="gallery" className="d-flex">
-                <div className="position-relative col-11 d-flex px-0 flex-column justify-content-end align-items-center">
+                <div className="position-relative col-12 d-flex px-0 flex-column justify-content-end align-items-center">
                   <div className="position-absolute photo" style={{ backgroundImage: `url(${cont.img})`}}></div>
                   <animated.div className="row mx-0 col-7 position-absolute p-1 text-danger bg-primary align-self-end" style={lower}>
                     <h6>{cont.name}</h6>
