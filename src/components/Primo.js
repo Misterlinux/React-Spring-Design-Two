@@ -32,6 +32,7 @@ function Primo(){
             </Link>
 
           </div>
+          
           <animated.div className="col-7 position-absolute back" style={{ x: xbtn }}>          
             <div className="ground border border-danger border-3"></div>
           </animated.div>

@@ -22,6 +22,7 @@ function Sign(){
 
   let mix = [colonna0, colonna1, colonna2]
 
+  //this useSprings() is used on the text on desktop and on the entire section on mobile
   let [left, apileft] = useSprings(3, (i)=>({
     ref: mix[i],
     from: {x: -35, opacity: 0 },
@@ -66,12 +67,13 @@ function Sign(){
 
   const [numba, setNum] = useState("");
 
+  //we limit the form to store only numbers
   function calling(e){
     const value = e.target.value.replace(/\D/g, "");
     setNum(value);
   }
   
-  // Mobile design
+  // Mobile design, useState() for the collapse
   const [basic, setBasic] = useState(false);
   const [stem, setStem] = useState(false);
   const [compl, setCompl] = useState(false);

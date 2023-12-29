@@ -55,7 +55,7 @@ function Gallery(){
     inter = setInterval(()=>{
       add()
 
-      volta == Data.length && clearInterval(inter)
+      volta === Data.length && clearInterval(inter)
     }, 1000)
 
     return () =>{

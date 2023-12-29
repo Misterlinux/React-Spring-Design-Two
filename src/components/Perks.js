@@ -1,8 +1,7 @@
-import { useSpring, animated, useTransition, config } from "@react-spring/web";
+import { animated, useTransition, config } from "@react-spring/web";
 import { useEffect } from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import Task, { useStato, useStatodis } from './Context';
-
+import { useStato } from './Context';
 
 function Perks(){
 

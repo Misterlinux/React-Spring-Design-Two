@@ -67,13 +67,9 @@ function Secondo(){
                   icon={cont.icona}
                 />
               </div>
+
               <div
-                className="d-flex align-items-center"
-                style={{
-                  height: "2em",
-                  paddingTop: "1.5em",
-                  paddingBottom: "2em",
-                }}
+                className="d-flex align-items-center textcircle"
               >
                 <animated.h5
                   className="text-center"

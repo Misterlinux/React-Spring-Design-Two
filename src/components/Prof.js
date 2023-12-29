@@ -26,6 +26,8 @@ function Prof(){
     threshold: 0.5
   })
 
+  //we create a template useSpring() object, in which to use the
+  //3 different useInView ref depending on the row
   let sposta = function(lista){
     return {
       largo: lista ? "100%" : "0%",
@@ -40,6 +42,8 @@ function Prof(){
   let fila2 = useSpring( sposta(seeSec) )
   let fila3 = useSpring( sposta(seeTer) )
 
+  //We assign the ref (useInView) and the style{} by using 
+  //the looped object properties as arguments
   function visto(x){
 
     let refe = 

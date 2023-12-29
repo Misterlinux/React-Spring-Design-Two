@@ -1,19 +1,18 @@
-import {useEffect} from "react";
-import { easings ,animated, config, useInView, useSpring, useTransition } from "@react-spring/web";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faBaseball, faPenNib, faFire} from "@fortawesome/free-solid-svg-icons"
+import { useEffect} from "react";
+import { animated, config, useSpring } from "@react-spring/web";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
   BrowserRouter as Router,
   useLocation,
-  useParams,
 } from "react-router-dom";
 
-import Task, { useStato, useStatodis } from './Context';
+import { useStato } from './Context';
 import stem from "../images/stem.jpg";
 import tech from "../images/tech.jpg"
 
 function Road({facol}){
 
+  //we filter the content to loop using the passed prop to the component
   let stato = useStato()
   let campi = stato.courses.filter((cont)=> cont.type == facol)
 

@@ -131,6 +131,12 @@ h1,h2,h3,h4,h5{
   background-color: var(--success);
 }
 
+.textcircle{
+  height: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 2em
+}
+
 /* --terzo-- */
 
 .leftcut{
@@ -184,9 +190,15 @@ h1,h2,h3,h4,h5{
   margin-bottom: 0;
 }
 
-.topdown{
-  top: 0;
+.carousel-control-prev-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
 }
+ 
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* quinto */
 
 .backo{
   background-image: url("./images/sign.png");
@@ -216,14 +228,6 @@ h1,h2,h3,h4,h5{
   align-items: center;
   justify-content: center;
   border: 2px solid var(--primary);
-}
-
-.carousel-control-prev-icon {
-  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
-}
- 
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f2ad5f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 /* Prof */

@@ -55,7 +55,7 @@ function Quarto(){
           <Carousel className="py-3 col-12">
             {stato.gallery.map((cont, index)=>(
 
-              <Carousel.Item key={index} interval={200000}>
+              <Carousel.Item key={index} interval={2000}>
                 
               <div className="row mx-0 d-flex justify-content-center" style={{ height: "65vh" }} key={index}>
                 

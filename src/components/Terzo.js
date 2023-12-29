@@ -14,6 +14,8 @@ function Terzo(){
   let [seecors, setSeecors] = useState( stato.courses ) 
   let filters = ["", "stem", "tech"]
 
+  //the index is then used to includes() the imported object array type property
+  //using the filters array ("" will let all elements in)
   function quale(indice){
 
     setSeecors(()=>{
@@ -24,6 +26,8 @@ function Terzo(){
     })
   }
 
+  //We edit the [true, false, false] useState() for the className conditions.
+  //using the index and n argument.
   function check(n){
     
     setCourse((x)=>{
@@ -40,7 +44,6 @@ function Terzo(){
       })
     })
   }
-
 
   const metti = useTransition(seecors, {
     from: {x: "-100px", y: "-50px", scale: 0 ,opacity: 0},
