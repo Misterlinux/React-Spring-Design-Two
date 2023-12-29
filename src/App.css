@@ -82,12 +82,6 @@ h1,h2,h3,h4,h5{
 
 /* secondo */
 
-/* https://i.pinimg.com/236x/82/f5/56/82f5566e6e5fc3cd9dbab85482699960.jpg */
-/* https://i.pinimg.com/236x/83/42/37/83423769fba69414d5192f8c9bff31a2.jpg */
-
-/* https://i.pinimg.com/236x/a2/86/31/a286318fca6134cf467fff6838770996.jpg */
-/* https://i.pinimg.com/236x/eb/3b/4a/eb3b4ab421ceda471eb9569fbe12240f.jpg */
-
 .secondwind{
   height: 42vh;
   display: flex;
@@ -157,8 +151,6 @@ h1,h2,h3,h4,h5{
   position: relative;
   left: -10px;
 }
-
-/* --Terzo-- */
 
 .quadro{
   height: 20vh;
@@ -345,7 +337,6 @@ h1,h2,h3,h4,h5{
 .list {
   position: relative;
   width: 100%;
-  /*height: 100%;*/
 }
 
 .list > div {
@@ -356,7 +347,6 @@ h1,h2,h3,h4,h5{
 .list > div > div {
   background-size: cover;
   background-position: center center;
-  /*width: 100%;*/
   height: 100%;
 }
 

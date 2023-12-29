@@ -1,6 +1,6 @@
 import React from "react";
-import Task, { useStato, useStatodis } from './Context';
-import { animated, useSprings, useInView, useSpring, config } from '@react-spring/web'
+import { useStato } from './Context';
+import { animated, useInView, useSpring } from '@react-spring/web'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
   BrowserRouter as Router,

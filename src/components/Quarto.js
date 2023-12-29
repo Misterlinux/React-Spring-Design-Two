@@ -1,7 +1,7 @@
-import React, {useState, useRef, useEffect, useMemo} from "react";
-import { animated, config, useInView, useSpring, useTransition, useSprings } from "@react-spring/web";
+import React, {useState} from "react";
+import { animated, useInView, useSpring } from "@react-spring/web";
 
-import Task, { useStato, useStatodis } from './Context';
+import { useStato } from './Context';
 import Carousel from 'react-bootstrap/Carousel';
 
 import {
@@ -17,8 +17,7 @@ function Quarto(){
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  //Remember that the carousel arrows are SVG imported imagefiles, 
-  //we can modify their fill tho
+  //We edit the SVG fill of the carousel arrow files 
   let [desc, seeDesc] = useInView()
 
   let lower = useSpring({

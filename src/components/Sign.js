@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSprings, useChain, useSpringRef, animated, config, useSpring} from "@react-spring/web";
+import { useSprings, useChain, useSpringRef, animated, config} from "@react-spring/web";
 import Collapse from 'react-bootstrap/Collapse';
 
 import basicimg from "../images/basic.jpg"
@@ -281,8 +281,6 @@ function Sign(){
         </animated.div>
 
       </div>
-
-
 
     </div>
   )

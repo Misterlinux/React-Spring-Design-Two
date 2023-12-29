@@ -1,6 +1,6 @@
 import {useState} from "react";
 import { animated, useTransition } from "@react-spring/web";
-import Task, { useStato, useStatodis } from './Context';
+import { useStato } from './Context';
 import {
   BrowserRouter as Router,
   Link,
@@ -41,8 +41,7 @@ function Terzo(){
     })
   }
 
-  //If you re-add elements those won't get updated, BUT wont even animate and only new one
-  //trail is for the time between teh elements render, while update and exirbefore do conflic
+
   const metti = useTransition(seecors, {
     from: {x: "-100px", y: "-50px", scale: 0 ,opacity: 0},
     enter: {x: "0px", y: "0px", scale: 1 ,opacity: 1, config: {duration: 300} },

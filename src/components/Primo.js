@@ -1,15 +1,10 @@
-import react from "react";
-import Task, { useStato, useStatodis } from "./Context"
-import { animated, useSprings, useInView, useSpring, config } from '@react-spring/web'
+import { animated, useInView, useSpring, config } from '@react-spring/web'
 import {
   BrowserRouter as Router,
   Link,
 } from "react-router-dom";
 
 function Primo(){
-
-  let stato = useStato()
-  let Data = stato.gallerypage
 
   let [primo, inPrimo] = useInView()
 
@@ -18,7 +13,6 @@ function Primo(){
     ximg: inPrimo ? 0 : 500,
     config: config.gentle
   })
-
 
   return(
     <div ref={primo}>

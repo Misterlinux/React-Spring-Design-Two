@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { animated, useInView, useSpring, config } from '@react-spring/web'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faBaseballBatBall, faTree, faBusSimple} from "@fortawesome/free-solid-svg-icons";
-import Task, { useStato, useStatodis } from './Context';
+import { useStato } from './Context';
 
 function Prof(){
 
@@ -44,8 +43,8 @@ function Prof(){
   function visto(x){
 
     let refe = 
-      x == 1 ? primo : 
-      x == 2 ? secondo : terzo 
+      x === 1 ? primo : 
+      x === 2 ? secondo : terzo 
     return refe
   }
 
@@ -59,7 +58,7 @@ function Prof(){
   }
 
   return(
-    <div>
+    <div className="border-bottom border-2 border-success">
 
       <div className="row mx-0">
         <div className="col-1 d-none d-md-flex bg-success"></div>

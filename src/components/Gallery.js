@@ -1,9 +1,9 @@
 import React from "react";
 
-import Task, { useStato, useStatodis } from './Context';
+import { useStato } from './Context';
 import { useState ,useEffect, useMemo, useRef } from "react"
 import useMeasure from 'react-use-measure'
-import { animated, useSpring, useTransition, useSprings, useInView} from '@react-spring/web'
+import { animated, useTransition} from '@react-spring/web'
 
 function Gallery(){
 
@@ -33,8 +33,7 @@ function Gallery(){
   let vol = useRef(0)
   let volta = vol.current
 
-  //We are comparing an array index to an array lenght, we need the <=
-  //instead of Data[volta]
+  //Data[volta] on the setImages() won't work, we need to set it outside
   function add(){
 
     if( volta < Data.length ){
